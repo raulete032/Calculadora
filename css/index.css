@@ -1,0 +1,203 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#calculator{
+    width: 20%;
+    height: 60%;
+    border: 1px solid black;
+}
+
+#panel{
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 20%;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    overflow-x: hidden;
+}
+
+#operation{
+    height: 100%;
+    font-size: large;
+}
+
+#result{
+    height: 100%;
+}
+
+
+#buttons{
+    padding: 3%;
+    display: grid;
+    width: 100%;
+    height: 80%;
+    column-gap: 3%;
+    row-gap: 3%;
+    grid-template-columns: repeat(5 20%);
+    grid-template-rows: 8% 20% 20% 20% 20%;
+}
+
+button{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#buttons > button:nth-of-type(1), #buttons > button:nth-of-type(2){
+    font-size: 80%;
+}
+
+#off{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#on{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+
+
+#seven{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#eight{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#nine{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#del{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#ac{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+#four{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#five{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#six{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#times{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+#split{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+#one{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#two{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+
+#three{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+#plus{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+#less{
+    grid-column: 5/6;
+    grid-row: 4/5;
+}
+
+#zero{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+#point{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+#equals{
+    grid-column: 3/6;
+    grid-row: 5/6;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    #calculator{
+        width: 30%;        
+    }    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #calculator{
+        width: 40%;
+    }    
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    #calculator{
+        width: 60%;
+    }    
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    #calculator{
+        width: 70%;
+    }    
+}
